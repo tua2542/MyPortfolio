@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form>
+            <input id = "a" type='number' placeholder="numberA">
+            <input id = "b" type='number' placeholder="numberB">
+            <button id = "plus" onClick='myFunction("+")'>+</button>
+            <button id = "subtract" onClick='myFunction("-")'>-</button>
+            <button id = "product" onClick='myFunction("*")'>x</button>
+            <button id = "division" onClick='myFunction("/")'>/</button>
+            <!-- <a href="#" onclick="myAlert()">onclick</a> -->
+        </form>
+    <script>
+        function myFunction(oper){
+                var a = document.getElementById('a');
+                var b = document.getElementById('b');
+                var sum=0;
+                
+                switch(oper){
+                    case '+' :
+                       sum = parseInt(a.value) + parseInt(b.value)
+                       alert(sum)
+                       break;
+                       
+                    case '-':
+                        sum = a.value - b.value
+                        alert(sum)
+                        break
+                        
+                    case '*':
+                        sum = a.value * b.value
+                        alert(sum)
+                        break
+                        
+                    case '/':
+                        sum = a.value / b.value
+                            alert(sum)
+                        
+                        break
+                }
+                }
+        
+ 
+        </script>
+</body>
+</html>

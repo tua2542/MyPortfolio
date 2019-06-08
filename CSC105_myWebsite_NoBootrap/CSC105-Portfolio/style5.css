@@ -1,0 +1,26 @@
+body{
+    background-image: url('images/background2.jpg');
+    /* margin: 0; */
+    /* background-repeat: repeat-x; */
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+   background-size: cover; 
+}
+.navbar {
+ 
+  padding: 10px ;
+  margin-bottom: 70px;
+  bottom: 64px;
+  background-color:#D6EAF8;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+ 
+ 
+}
+.navbar h1{
+    font-size: 50px;
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: bold;
+   text-shadow: 3px 3px #CACFD2 ;
+   text-align: center;
+}

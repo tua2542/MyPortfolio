@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="myFunc()">
+        <h3>My Form</h3>
+        <input type='text' placeholder="name">
+        <input placeholder="Email">
+        <input type ='password' placeholder="password">
+        <input type = 'number' placeholder="age">
+        <button type = "submit">NEXT</button> 
+    </form>
+    <script>
+        function myFunc() {
+        var name = document.getElementById('name');
+        var  email = document.getElementById('email');
+        var password = document.getElementById('password');
+        var   age   = document.getElementById('age');
+            alert(name.value + " "+email.value+" "+age.value+" "+password.value);
+            }
+    </script>
+</body>
+</html>

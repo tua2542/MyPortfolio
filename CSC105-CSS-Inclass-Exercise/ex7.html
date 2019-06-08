@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First JavaScript Page</title>
+</head>
+<body>
+    <!-- <h1>First JavaScript Page</h1>
+    <script type="text/javascript" src="ex7.js"> 
+    
+    // document.write("<hr>");
+    // document.write("Hello World Wide Web"); 
+    // document.write("<hr>");
+   function sum() {
+        var s = 0; for (var i = 0; i < arguments.length; i++) {
+        s += arguments[i];
+        return s;
+    } 
+      document.getElementById() = s;
+
+} -->
+
+
+    <h2>JavaScript Math Object</h2>
+
+    <p>Sum</p>
+    <p id="piDemo"></p>
+     
+    
+
+    <script>
+    //    function sum() {
+    //         var s = 0; for (var i = 0; i < arguments.length; i++) s += arguments[i];
+    //         return s;
+    //    }
+    //    document.write(sum(1,2,3)+" ");
+    //    document.write(sum(1,2,3,4,5)+" ");
+    //    document.write(sum(1, 2, "3",4,5)+" ");
+        // } sum(1, 2, 3); 
+        // sum(1, 2, 3, 4, 5);
+        // // returns 6 // returns 15
+        // sum(1, 2, "3", 4, 5); // returns ?
+    
+    // var triangle ={
+    //         p1 : {x:0, y:3},
+    //         p2: {x:1, y: 4},
+    //         p3 : {x:2 , y:5} 
+    // }
+    // alert(triangle.p1.y);
+
+    function Person(fname,lname,sal){
+        this.firstName = fname;
+        this.lastName = lname;
+        this.salary =sal;
+        this.sayHi = function(){
+            alert("Hi! " + this.firstName +" "+this.lastName);
+            }
+            this.getSalary = function(){
+            console.log("Salary is "+ this.salary);
+        }
+    }
+    var p1 = new Person("John","Doe");
+    var p2 = new Person("Jane","Dow");
+
+    Person.prototype.sayHello = function(){
+        alert("Hello! "+ this.firstName+" "+this.lastName);
+    }
+    p1.sayHello();
+    p2.sayHello();
+    // p1.sayHi();
+    // p2.sayHi();
+    
+    // p1.salary = 30000;
+    // p1.getSalary = function(){
+    // console.log("Salary is "+ this.salary);
+    // }
+    //     p1.getSalary();
+    </script>
+
+
+
+
+   
+</body>
+</html>
